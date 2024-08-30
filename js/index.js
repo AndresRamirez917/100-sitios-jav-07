@@ -1,3 +1,21 @@
+async function getDataList() {
+    const resulis = await fetch('https://rickandmortyapi.com/api/character');
+    const names = await resulis.json()
+    names.results.forEach(element => {
+        if(element.id <= 4){
+            const lista = document.createRange().createContextualFragment(`
+                
+               <ul>
+              <li><a id="li1" href="#mainheader">${element.name}</a></li>
+                </ul>
+                
+                `)
+                const container = document.querySelector('.container')
+                container.append(lista)
+        }
+    })
+}
+
 async function getData() {
     const result = await fetch('https://fakestoreapi.com/products/');
     const products = await result.json();
@@ -55,5 +73,6 @@ const email_valido = email => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
+getDataList()
 getData()
 btn_submit.addEventListener("click", validar);

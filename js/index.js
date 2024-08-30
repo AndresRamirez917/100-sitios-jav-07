@@ -1,12 +1,12 @@
 async function getDataList() {
-    const resulis = await fetch('https://rickandmortyapi.com/api/character');
+    const resulis = await fetch('https://api.api-onepiece.com/v2/characters/en');
     const names = await resulis.json()
-    names.results.forEach(element => {
+    names.forEach(element => {
         if(element.id <= 4){
             const lista = document.createRange().createContextualFragment(`
                 
                <ul>
-              <li><a id="li1" href="#mainheader">${element.name}</a></li>
+              <li><a id="li1" href="">${element.name}</a></li>
                 </ul>
                 
                 `)

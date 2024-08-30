@@ -1,0 +1,78 @@
+/* navbar */
+
+#navbar {
+    text-align: center;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+#navbar .logo {
+    float: none;
+}
+
+#navbar ul {
+    float: none;
+    padding-left: 20px;
+}
+
+/* showcase */
+
+#showcase {
+    height: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#showcase  h1 {
+    padding-top: 50px;
+    padding-left: 0px;
+  }
+  
+  #showcase p {
+    padding-left: 0px;
+  }
+
+  /* services */
+
+  #services {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  #services h4 {
+    padding-top: 20px;
+  }
+
+  /* about */
+
+ 
+  .about-left,
+  .about-right {
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  /* contact */
+
+  #contact {
+    padding: 50px 0;
+  }
+  
+  #contact h2 {
+    padding-bottom: 20px;
+  }
+
+  #contact form {
+    width: 100%;
+  }
+
+
+
